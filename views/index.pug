@@ -5,6 +5,9 @@ block content
   p Well hello there! This is #{title}
   <button type="button" class="btn btn-secondary" onclick="doBump()">Press me for the contents</button>
   .bump= 'Count #{count} Bump  #{bump}'
+  <div>
+    p Count #{count} Bump  #{bump}
+  </div>
   script. 
     - var count = 0
     - var bump = 1
