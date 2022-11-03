@@ -3,9 +3,14 @@ extends layout
 block content
   h1= title
   p Well hello there! This is #{title}
-  <button type="button" class="btn btn-secondary">Press me for the contents</button>
-  <div id='bump'>
-    p bump the count
-  </div>
+  <button type="button" class="btn btn-secondary" onclick="doBump()">Press me for the contents</button>
+  .bump= 'Count ' + count + ' Bump ' + bump
+script. 
+  - var count = 0
+  - var bump = 1
+  function doBump(){
+    count = count + bump;
+    bump = bump + 1;
+  }
 
 
