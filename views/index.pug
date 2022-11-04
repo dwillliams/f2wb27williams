@@ -6,8 +6,8 @@ block content
   <button type="button" class="btn btn-secondary" onclick="doBump()">Press me for the contents</button>
   .bump= 'Count ' +  count + ' Bump ' + bump
   script. 
-    var count = 0
-    var bump = 1
+    let count = 0
+    let bump = 1
     function doBump(){
       count = count + bump;
       bump = bump + 1;
