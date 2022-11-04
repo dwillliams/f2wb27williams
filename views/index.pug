@@ -4,15 +4,16 @@ block content
   h1= title
   p Well hello there! This is #{title}
   <button type="button" class="btn btn-secondary" onclick="doBump()">Press me for the contents</button>
-  .bump Count 1 Bump 2
-  script. 
+  #bump bump the count 
+  script.
     var count = 0;
     var bump = 1;
     function doBump(){
       count = count + bump;
       bump = bump + 1;
       var text = 'Count ' +  count + ' Bump ' + bump;
-
+      var obj = document.getElementById('bump')
+      obj.innerText = text;
     }
 
 
